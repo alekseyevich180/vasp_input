@@ -1,0 +1,15 @@
+OUTCAR_40:                         Elapsed time (sec):      351.056
+OUTCAR_10:                         Elapsed time (sec):      359.426
+OUTCAR_15:                         Elapsed time (sec):      359.861
+OUTCAR_20:                         Elapsed time (sec):      422.481
+OUTCAR_24:                         Elapsed time (sec):      731.497
+OUTCAR_5:                         Elapsed time (sec):      832.761
+OUTCAR_12:                         Elapsed time (sec):      903.971
+OUTCAR_2:                         Elapsed time (sec):     1163.627
+OUTCAR_120:                         Elapsed time (sec):     1268.045
+OUTCAR_3:                         Elapsed time (sec):     1346.728
+OUTCAR_4:                         Elapsed time (sec):     1370.550
+OUTCAR_60:                         Elapsed time (sec):     1528.087
+OUTCAR_8:                         Elapsed time (sec):     1562.440
+OUTCAR_30:                         Elapsed time (sec):     1958.635
+OUTCAR_6:                         Elapsed time (sec):     3123.690

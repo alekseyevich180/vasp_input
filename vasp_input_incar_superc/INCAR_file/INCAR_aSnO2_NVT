@@ -1,0 +1,67 @@
+Global Parameters
+ISTART =  0           
+ISPIN  =  1            
+ICHARG =  2         
+LREAL  = A       
+ENCUT  =  500        
+PREC   =  LOW   
+ALGO = FAST
+NWRITE = 3
+# LVTOT  = .TRUE.      
+# LVHAR  = .TRUE.      
+# NELECT =             
+# LPLANE = .TRUE.      
+# NWRITE = 2         
+# KPAR   = 2        
+# NGXF    = 300        
+# NGYF    = 300        
+# NGZF    = 300        
+# GGA = PE 
+
+ 
+#Electronic Relaxation
+ISMEAR =  -1
+SIGMA  =  0.05
+EDIFF  =  1E-04
+NELMIN = 6
+BMIX   = 2.0
+MAXMIX = 50
+
+#NELM = 60 
+#NELMIN =  
+#NELMDL =  
+ 
+#Molecular Dynamics
+IBRION =  0           
+NSW    =  100000          
+# EDIFFG = -1E-04        
+POTIM  =  1            
+SMASS  =  0.5 
+PMASS = 1000
+MDALGO =  2        
+ISIF = 2
+#LANGEVIN_GAMMA_L = 100   
+#LANGEVIN_GAMMA = 100 100 
+TEBEG = 4000  # (start temperature)  
+#TEEND = 4000  (end temperature) 
+NBLOCK = 1 
+KBLOCK = 100  
+ISYM = 0    
+
+# ISYM   =  0          
+NWRITE =  3            
+
+
+# Parallelization
+NPAR = 5 
+LREAL = Auto
+NSIM = 1
+LPLANE = .TRUE.
+
+
+LWAVE  = .F.        
+LCHARG = .F.        
+# ADDGRID= .F.        
+
+
+ 

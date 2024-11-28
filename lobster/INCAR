@@ -1,0 +1,50 @@
+# SGGA calc
+# Basic setup:
+ ISPIN = 1
+ LSORBIT = .FALSE.
+ # not using Hubbard U
+
+# Accuracy controls:
+ # Use default energy cutoff for PREC
+
+# Electronic loop controls:
+ ENCUT = 500
+ ALGO = fast    # 
+ EDIFF = 1E-5
+ NELM = 500
+ TIME = 0.400000
+ ISMEAR = -5        
+ SIGMA = 0.0500   # eV
+ # NBANDS - using default
+
+# Relaxation control:
+ IBRION = 2    # Conjugate gradients
+ NSW = 0
+ POTIM = 0.500000
+ ISIF = 0     
+ EDIFFG = -0.030000
+
+# NEB 
+# IMAGES = 4
+# SPRING = -5
+# LCLIMB = .TRUE.
+
+# Parallelization
+ NPAR = 4
+ LREAL = Auto
+ NSIM = 1
+ LPLANE = .TRUE.
+
+# vdW correction
+ IVDW = 1
+
+# Properties:
+ LCHARG = .FALSE.
+ LWAVE = .TRUE.
+ NEDOS = 1000
+ LORBIT = 12
+ ISYM = -1 
+ LELF = .FALSE.
+ LVTOT = .FALSE.
+ LVHAR = .FALSE.
+# NBANDS = 214

@@ -1,0 +1,61 @@
+Global Parameters
+ISTART =  1            (Read existing wavefunction, if there)
+ISPIN  =  1            (Non-Spin polarised DFT)
+# ICHARG =  11         (Non-self-consistent: GGA/LDA band structures)
+LREAL  = .FALSE.       (Projection operators: automatic)
+ENCUT  =  500        (Cut-off energy for plane wave basis set, in eV)
+PREC   =  LOW   (Precision level: Normal or Accurate, set Accurate when perform structure lattice relaxation calculation)
+ALGO = FAST
+# LVTOT  = .TRUE.      (Write total electrostatic potential into LOCPOT or not)
+# LVHAR  = .TRUE.      (Write ionic + Hartree electrostatic potential into LOCPOT or not)
+# NELECT =             (No. of electrons: charged cells, be careful)
+# LPLANE = .TRUE.      (Real space distribution, supercells)
+# NWRITE = 2           (Medium-level output)
+# KPAR   = 2           (Divides k-grid into separate groups)
+# NGXF    = 300        (FFT grid mesh density for nice charge/potential plots)
+# NGYF    = 300        (FFT grid mesh density for nice charge/potential plots)
+# NGZF    = 300        (FFT grid mesh density for nice charge/potential plots)
+ 
+Electronic Relaxation
+ISMEAR =  0
+SIGMA  =  0.05
+EDIFF  =  1E-04
+#NELM = 60 ( the maximum number of electronic SC (self-consistency) steps.)
+#NELMIN =  specifies the minimum number of electronic self-consistency steps.
+#NELMDL = specifies the number of non-self-consistent steps at the beginning. 
+ 
+Molecular Dynamics
+IBRION =  0            (Activate MD)
+NSW    =  100000          (Max ionic steps)
+#EDIFFG = -1E-02        (Ionic convergence, eV/A)
+POTIM  =  1            (Timestep in fs)
+SMASS  =  0 (MD Algorithm: -3-microcanonical ensemble, 0-canonical ensemble)
+PMASS = 1000
+MDALGO =  2          (Andersen Thermostat)
+ISIF = 2
+#LANGEVIN_GAMMA_L = 100   
+#LANGEVIN_GAMMA = 100 100 
+TEBEG = 3513    
+TEEND = 1    
+NBLOCK = 1   
+ISYM = 0    
+# TEBEG  =     100     (Start temperature K)
+# TEEND  =     100     (Final temperature K)
+
+# ISYM   =  0          (Switch symmetry off)
+NWRITE =  0            (For long MD-runs use NWRITE=0 or NWRITE=1)
+
+
+# Parallelization
+NPAR = 5 
+LREAL = Auto
+NSIM = 1
+LPLANE = .TRUE.
+
+
+LWAVE  = .F.        (Write WAVECAR or not)
+LCHARG = .F.        (Write CHGCAR or not)
+# ADDGRID= .F.        (Increase grid, helps GGA convergence)
+
+
+ 

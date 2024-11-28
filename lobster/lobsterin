@@ -1,0 +1,16 @@
+COHPstartEnergy  -30
+COHPendEnergy	  10
+
+includeorbitals s p d
+userecommendedbasisfunctions
+
+cohpbetween atom 188 atom 109 
+cohpbetween atom 65 atom 117 
+cohpbetween atom 65 atom 120 
+cohpbetween atom 65 atom 130 
+cohpbetween atom 196 atom 78 
+cohpbetween atom 196 atom 77 
+cohpbetween atom 201 atom 78 
+cohpbetween atom 201 atom 77 
+
+

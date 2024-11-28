@@ -1,0 +1,9 @@
+COHPstartEnergy  -30
+COHPendEnergy	  30
+
+includeorbitals s p d
+userecommendedbasisfunctions
+
+cohpbetween atom 1 atom 5 orbitalwise
+cohpbetween atom 1 atom 60 orbitalwise
+cohpbetween atom 5 atom 60 orbitalwise

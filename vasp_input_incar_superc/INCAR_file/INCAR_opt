@@ -1,0 +1,45 @@
+# SGGA calc
+# Basic setup:
+ ISPIN = 1
+
+# Electronic loop controls:
+ ENCUT = 500
+ ALGO = Normal    
+ EDIFF = 1E-8
+ NELM = 500
+ ISMEAR = 0        
+ SIGMA = 0.05   # eV
+
+# Relaxation control:
+ IBRION = 2    # Conjugate gradients
+ NSW = 1000
+ ISIF = 0     
+ EDIFFG = -0.010
+
+# Vibration
+# MAXMIX = 60
+# NFREE = 2
+
+# NEB 
+# IMAGES = 4
+# SPRING = -5
+# LCLIMB = .TRUE.
+
+# Parallelization
+ NPAR = 16
+ LREAL = AUTO
+ NSIM = 1
+ LPLANE = .TRUE.
+
+# vdW correction
+#IVDW=2
+
+# Properties:
+ LCHARG = .FALSE.
+ LWAVE = .FALSE.
+ LELF = .FALSE.
+ LVTOT = .FALSE.
+ LVHAR = .FALSE.
+
+# Dipole correction
+IDIPOL = 3
